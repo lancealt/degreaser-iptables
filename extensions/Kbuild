@@ -1,0 +1,5 @@
+# -*- Makefile -*-
+
+obj-${build_RESET}       += xt_RESET.o
+obj-${build_notarpit}    += xt_notarpit.o
+

@@ -1,0 +1,5 @@
+# -*- Makefile -*-
+
+obj-${build_RESET}       += libxt_RESET.so
+obj-${build_notarpit}    += libxt_notarpit.so
+
