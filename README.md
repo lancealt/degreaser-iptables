@@ -2,30 +2,34 @@ degreaser-iptables
 ==================
 
 degreaser-iptables is a set of modules for the Linux xtables architecture that can
-detect and avoid network tarpits such as [LaBrea|http://labrea.sourceforge.net]. 
+detect and avoid network tarpits such as [LaBrea](http://labrea.sourceforge.net). 
 
-The algorithm used is based the [degreaser|http://www.cmand.org/degreaser] tarpit
+The algorithm used is based the [degreaser](http://www.cmand.org/degreaser) tarpit
 scanning tool.
 
 
 Installation
 ------------
-degreaser-iptables uses the [xtables-addons|http://xtables-addons.sourceforge.net] framework
-and can be added using the xa-download-more script included in the xtables-addons disribution.
+degreaser-iptables uses the [xtables-addons](http://xtables-addons.sourceforge.net) framework
+and can be added using the **xa-download-more** script included in the xtables-addons disribution.
 
-1. Download or clone the xtables-addons repository [git://git.code.sf.net/p/xtables-addons/xtables-addons]
+1. Download or clone the xtables-addons repository
+
+    git clone git://git.code.sf.net/p/xtables-addons/xtables-addons
+
 2. Add the following line to the 'sources' file:
 
     http://www.cmand.org/degreaser
 
 3. Run the xa-download-more script to download and merge the degreaser-iptables code in to
    your local git repository.
+
 4. Configure, compile, and install the xtables-addons package as follows:
 
-	./autogen.sh
+    ./autogen.sh
     ./configure
-	make
-	make install
+    make
+    make install
 
 
 Configuration
